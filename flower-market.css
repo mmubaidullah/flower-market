@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 /* General Styles and Typography */
 
 .inter-font {
@@ -12,13 +16,19 @@ body{
     font-weight: 22;
     font-style: normal;
     background-color: #f8f9fa;
+    margin: 0;
+}
+/* navbar-section */
+.navbar-section{
+    margin: 0 150px;
 }
 .nev-bar{
-    max-width: 1740px;
-    height: 71px;
+    /* width: 1740px;
+    height: 71px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;    
 }
 .logo img {
     height: 50px;
@@ -48,41 +58,7 @@ body{
     width: 20px;
 }
 
-/* .banner-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid;
-    align-items:flex-end;
-}
-.banner-content{
-    display: flex;
-    align-items:flex-end;
-    
-}
-.box{
-    width: 100px;
-    height: 100px;
-    background-color: #D9D9D9;
-}
-.banner-text{
-    width: 570px;
-    height: 412px;
-    margin-left: 150px;
-}
-.banner-image{
-    width: 570px;
-    height: 355px;
-    margin-right: 150px;
-}
-.banner-text h1{
-    font-size: 65px;
-    font-weight: bold;
-}
-.banner-text span{
-    font-size: 65px;
-    color: #e47070;
-} */
+/* banner-section */
 .banner-section {
     display: flex;
     justify-content: center;
@@ -90,6 +66,9 @@ body{
     max-width: 1200px;
     margin: 50px auto;
     padding: 0 20px;
+    flex-wrap: wrap;
+    margin: 0 150px;
+
 }
 .box{
     width: 100px;
@@ -119,11 +98,13 @@ body{
 /* Our Plants Section */
 .plants-section {
     padding: 80px 20px;
+    margin: 0 150px;
+
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
@@ -183,6 +164,7 @@ body{
 .lover-section {
     padding: 80px 0;
     background-color: #f8f8f8;
+    margin: 0 150px;
 }
 
 .lover-grid {
@@ -240,7 +222,7 @@ body{
 /* Latest Deals Section */
 .deals-section {
     padding: 80px 0;
-    background-color: #ffffff;
+    margin: 0 150px;
 }
 
 .deals-grid {
@@ -286,38 +268,51 @@ body{
     font-weight: bold;
 }
 
-/* Newsletter Section */
-.newsletter-section {
+/* join Section */
+.join-section {
+    height: 38%;
+    width: 100%;
     padding: 80px 0;
     text-align: center;
     background-size: cover;
     background-position: center;
-    background-color: #f8f8f8;
-}
-
-.newsletter-content h2 {
-    font-size: 48px;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.newsletter-form {
+    background-image: url(assets/news-letter-bg.png);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+}
+.container-join-section{
+    width: 830px;
+    height: 140px;
+    gap: 0px;
+}
+.join-section h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 30px;
 }
 
-.newsletter-form input {
+.join-section-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 830px;
+    height: 50px;
+}
+
+.join-section-form input {
     padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 300px;
+    width: 640px;
     font-size: 16px;
+    background-color: #FFFFFF;
 }
 
 .subscribe-btn {
     padding: 12px 30px;
+    width: 190px;
+    height: 48px;
+    background-color: #E95A08;
 }
 
 /* Footer Section */
@@ -395,14 +390,14 @@ body{
     .deals-grid {
         grid-template-columns: 1fr;
     }
-    .newsletter-content h2 {
+    .join-section-content h2 {
         font-size: 36px;
     }
-    .newsletter-form {
+    .join-section-form {
         flex-direction: column;
         width: 100%;
     }
-    .newsletter-form input {
+    .join-section-form input {
         width: 80%;
     }
     .footer-content-grid {
