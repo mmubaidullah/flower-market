@@ -1,38 +1,50 @@
-*{
+/* General Styles and Typography */
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f8f8;
+    color: #4b2a3a;
+    line-height: 1.6;
 }
-/* General Styles and Typography */
 
-.inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 22;
-  font-style: normal;
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #4b2a3a;
+    margin-bottom: 10px;
 }
-body{
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 22;
-    font-style: normal;
+
+.section-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* Navbar & Banner Section */
+.banner-section {
     background-color: #f8f9fa;
-    margin: 0;
+    padding: 20px 0;
 }
-/* navbar-section */
-.navbar-section{
-    margin: 0 150px;
-}
-.nev-bar{
-    /* width: 1740px;
-    height: 71px; */
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
+
 .logo img {
     height: 50px;
 }
+
 .desktop-nav ul {
     list-style: none;
     margin: 0;
@@ -40,71 +52,82 @@ body{
     display: flex;
     gap: 30px;
 }
-.desktop-nav a{
+
+.desktop-nav a {
     text-decoration: none;
-    color: #000;
-}
-.home{
-    font-weight: bold;
-    color: #252432;
-}
-.desktop-nav li{
-    color: #8987A1;
-}
-.desktop-nav span li{
-    color: #000000;
-}
-.desktop-nav span li img{
-    width: 20px;
+    color: #4b2a3a;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-/* banner-section */
-.banner-section {
+.desktop-nav a:hover {
+    color: #e57373;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.banner-content {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
     margin: 50px auto;
     padding: 0 20px;
-    flex-wrap: wrap;
-    margin: 0 150px;
+}
 
-}
-.box{
-    width: 100px;
-    height: 100px;
-    background-color: #D9D9D9;
-}
 .banner-text {
     flex: 1;
     text-align: left;
 }
 
-.banner-text h1{
-    font-size: 65px;
-    font-weight: bold;
+.banner-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #1d0f0f;
     line-height: 1.2;
     margin: 0;
 }
-.banner-text span{
-    font-size: 65px;
+.fresh {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
     color: #e47070;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #D9D9D9;
+}
+.banner-text p {
+    font-size: 1.2rem;
+    color: #6c757d;
+    max-width: 500px;
+    margin-top: 20px;
 }
 
 .banner-image {
     flex: 1;
     text-align: right;
 }
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Our Plants Section */
 .plants-section {
-    padding: 80px 20px;
-    margin: 0 150px;
-
+    padding: 0 20px 50px 20px;
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
@@ -160,248 +183,315 @@ body{
     transform: scale(1.05);
 }
 
-/* Flower & Plants Lover Section */
-.lover-section {
-    padding: 80px 0;
-    background-color: #f8f8f8;
-    margin: 0 150px;
-}
-
-.lover-grid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.lover-image {
-    flex: 1;
-    max-width: 500px;
-}
-
-.lover-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.lover-text-content {
-    flex: 1;
-    max-width: 500px;
-}
-
-.lover-text-content h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.lover-text-content ul {
-    list-style: none;
-    padding: 0;
-}
-
-.lover-text-content li {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 15px;
-    position: relative;
-    padding-left: 25px;
-}
-
-.lover-text-content li::before {
-    content: "✓";
-    color: #ff9900;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-}
-
 /* Latest Deals Section */
 .deals-section {
-    padding: 80px 0;
-    margin: 0 150px;
+    padding: 0 20px 50px 20px;
+    background-color: #f8f9fa;
 }
 
 .deals-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.deal-item {
+.deal-card {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-}
-
-.deal-item img {
-    width: 100%;
-    height: auto;
-    display: block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
 }
 
-.deal-item:hover img {
-    transform: scale(1.05);
+.deal-card:hover {
+    transform: translateY(-5px);
 }
 
-.deal-info {
+.deal-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.deal-overlay {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: white;
+    color: #fff;
 }
 
-.deal-info span {
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
+.discount {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-.shop-now-link {
-    color: white;
-    text-decoration: underline;
-    font-weight: bold;
+.deal-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 5px 0 10px;
 }
 
-/* join Section */
-.join-section {
-    height: 38%;
-    width: 100%;
-    padding: 80px 0;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
+.shop-now-btn {
+    background-color: #fff;
+    color: #e57373;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #eee;
+    transform: scale(1.05);
+}
+
+/* Get In Touch Section */
+.get-in-touch-section {
+    padding: 100px 20px;
     background-image: url(assets/news-letter-bg.png);
+}
+
+.get-in-touch-content {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.container-join-section{
-    width: 830px;
-    height: 140px;
-    gap: 0px;
-}
-.join-section h2 {
-    font-size: 50px;
+
+.left-side h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
     font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 30px;
+    color: white;
+    margin-bottom: 10px;
 }
 
-.join-section-form {
+.left-side {
+    font-size: 1.2rem;
+    color: #6c757d;
+    max-width: 500px;
+    text-align: left;
+}
+
+.subscribe-form {
+    margin-top: 30px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 830px;
-    height: 50px;
 }
 
-.join-section-form input {
-    padding: 12px;
-    width: 640px;
-    font-size: 16px;
-    background-color: #FFFFFF;
+.subscribe-form input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 350px;
+    font-size: 1rem;
 }
 
 .subscribe-btn {
-    padding: 12px 30px;
-    width: 190px;
-    height: 48px;
     background-color: #E95A08;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    height: 51px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.subscribe-btn:hover {
+    background-color: #d35a5a;
+    transform: scale(1.05);
+}
+
 
 /* Footer Section */
 .footer {
-    background-color: #f8f8f8;
-    padding: 60px 0;
+   padding: 60px 0;
+   margin: 0 150px;
 }
 
 .footer-content-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+   gap: 40px;
+   align-items: flex-start;
+}
+
+.footer-logo-info {
+   display: flex;
+   flex-direction: column;
 }
 
 .footer-logo-info .logo {
-    margin-bottom: 20px;
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.footer-logo-info .logo img {
+   height: 50px;
+   margin-bottom: 5px;
+}
+
+.footer-logo-info .logo span {
+   font-size: 28px;
+   font-weight: bold;
+   color: #333;
+}
+
+.footer-logo-info .logo .flower-shop {
+   font-size: 14px;
+   color: #777;
+   letter-spacing: 1px;
 }
 
 .footer-logo-info p {
-    font-size: 14px;
-    color: #777;
+   font-size: 14px;
+   color: #777;
+   line-height: 1.8;
+   margin-top: 10px;
 }
 
-.footer-links-group h4, .social-links h4 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 15px;
+.footer-links-group h4 {
+   font-size: 16px;
+   color: #333;
+   margin-bottom: 15px;
+   font-weight: bold;
 }
 
-.footer-links-group ul, .social-links ul {
-    list-style: none;
-    padding: 0;
+.footer-links-group ul {
+   list-style: none;
+   padding: 0;
 }
 
-.footer-links-group a, .social-links a {
-    text-decoration: none;
-    color: #777;
-    transition: color 0.3s ease;
+.footer-links-group ul li {
+   margin-bottom: 10px;
 }
 
-.footer-links-group a:hover, .social-links a:hover {
-    color: #ff9900;
+.footer-links-group ul li a {
+   text-decoration: none;
+   color: #777;
+   transition: color 0.3s ease;
+   font-size: 14px;
 }
 
-.social-links ul {
-    display: flex;
-    gap: 15px;
+.footer-links-group ul li a:hover {
+   color: #ff9900;
 }
 
-.social-links ul a {
-    font-size: 24px;
+.social-links {
+   display: flex;
+   gap: 15px;
+   align-items: flex-start;
 }
 
-/* Responsive Styles */
+.social-links a {
+   font-size: 24px;
+   color: #555;
+   transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+   color: #ff9900;
+}
+
+/* Responsive Design for Mobile (iPhone) */
 @media (max-width: 768px) {
-    .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
+    .desktop-nav, .box{
+        display: none;
     }
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
+
+    .mobile-menu-icon {
+        display: block;
+        height: 30px;
     }
-    .hero-content {
-        flex-direction: column-reverse;
+
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .banner-text {
+        order: 2;
+        margin-top: 30px;
+        padding: 16px;
+    }
+
+    .banner-image {
+        order: 1;
         text-align: center;
     }
-    .hero-text h1 {
-        font-size: 40px;
+
+    .banner-text h1, .fresh {
+        font-size: 2.5rem;
     }
-    .lover-grid {
-        flex-direction: column;
+
+    .banner-text p {
+        font-size: 1rem;
     }
+
+    .plants-section, .deals-section, .get-in-touch-section, .footer {
+        padding: 40px 15px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
     .deals-grid {
         grid-template-columns: 1fr;
     }
-    .join-section-content h2 {
-        font-size: 36px;
-    }
-    .join-section-form {
+
+    .get-in-touch-content {
         flex-direction: column;
+        text-align: center;
+    }
+
+    .left-side {
         width: 100%;
     }
-    .join-section-form input {
-        width: 80%;
+
+    .left-side h2 {
+        font-size: 2rem;
     }
-    .footer-content-grid {
-        grid-template-columns: 1fr;
+    
+    .left-side .section-subtitle-left {
         text-align: center;
+    }
+
+    .right-side {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .footer{
+        margin-left: 0;
+    }
+    .subscribe-form {
+        /* flex-direction: column; */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .subscribe-form input {
+        width: 50%;
+        margin: 0;
+    }
+    .subscribe-btn {
+        width: 30%;
+        margin: 0;
+    }
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .social-icons {
+        margin-top: 20px;
     }
 }

@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flower-market</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Flower Market</title>
     <link rel="stylesheet" href="flower-market.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="navbar-section">
-        <header class="nev-bar">
+
+    <section class="banner-section">
+        <header class="navbar">
             <div class="logo">
-                <a href="#"><img src="assets/logo.png" alt=""></a>
+                <a href="#"><img src="assets/logo.png" alt="Fauget Logo"></a>
             </div>
-            <div class="desktop-nav">
+            <nav class="desktop-nav">
                 <ul>
-                    <li class="home"><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">About us</a></li>
-                    <span><li><a href="#"><img src="assets/cart-icon.png.png" title="shopping cart icons" alt="Cart Icon"> Cart ($56)</a></li></span>
+                    <li><a href="#"><img style="width: 26px;" src="assets/cart-icon.png.png" title="shopping cart icons" alt="Cart Icon"> Cart ($56)</a></li>
                 </ul>
-            </div>
+            </nav>
         </header>
-    </section>
 
-    <div class="banner-section">
+        <div class="banner-content">
             <div class="banner-text">
-                <h1>ALWAYS <span>FRESH FLOWERS</span></h1>
+                <h1>ALWAYS <span class="fresh">FRESH FLOWERS</span></h1>
                 <div class="box"></div>
                 <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
             </div>
@@ -37,6 +38,7 @@
             </div>
         </div>
     </section>
+
     <section class="plants-section">
         <h2 class="section-title">Our Plants</h2>
         <p class="section-subtitle">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
@@ -93,78 +95,58 @@
         </div>
     </section>
 
-    <section class="lover-section">
-        <div class="container lover-grid">
-            <div class="lover-image">
-                <img src="assets/flower-store.png" alt="Flower Lover">
-            </div>
-            <div class="lover-text-content">
-                <h2>Flower & Plants Lover</h2>
-                <ul>
-                    <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</li>
-                    <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</li>
-                    <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
     <section class="deals-section">
-        <div class="container">
-            <h2 class="section-heading">Latest Deals</h2>
-            <p class="section-subtitle">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
-            <div class="deals-grid">
-                <div class="deal-item">
-                    <img src="assets/deal-ana.png" alt="Deal 1">
-                    <div class="deal-info">
-                        <span>60% Off | Bloom Plant</span>
-                        <a href="#" class="shop-now-link">Shop Now</a>
-                    </div>
+        <h2 class="section-title">Latest Deals</h2>
+        <p class="section-subtitle">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+        <div class="deals-grid">
+            <div class="deal-card">
+                <img src="assets/deal-ana.png" alt="Bloom Plant Deal">
+                <div class="deal-overlay">
+                    <p class="discount">60% Off</p>
+                    <p class="deal-text">Bloom Plant</p>
+                    <button class="shop-now-btn">Shop Now</button>
                 </div>
-                <div class="deal-item">
-                    <img src="assets/deal-bloom.png" alt="Deal 2">
-                    <div class="deal-info">
-                        <span>25% Off | Zabo Plant</span>
-                        <a href="#" class="shop-now-link">Shop Now</a>
-                    </div>
+            </div>
+            <div class="deal-card">
+                <img src="assets/deal-bloom.png" alt="Zabo Plant Deal">
+                <div class="deal-overlay">
+                    <p class="discount">25% Off</p>
+                    <p class="deal-text">Zabo Plant</p>
+                    <button class="shop-now-btn">Shop Now</button>
                 </div>
-                <div class="deal-item">
-                    <img src="assets/deal-zabo.png" alt="Deal 3">
-                    <div class="deal-info">
-                        <span>30% Off | Ana Plant</span>
-                        <a href="#" class="shop-now-link">Shop Now</a>
-                    </div>
+            </div>
+            <div class="deal-card">
+                <img src="assets/deal-zabo.png" alt="Ana Plant Deal">
+                <div class="deal-overlay">
+                    <p class="discount">30% Off</p>
+                    <p class="deal-text">Ana Plant</p>
+                    <button class="shop-now-btn">Shop Now</button>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- <section class="join" style="background-image: url('newsletter-bg.jpg');">
-        <div class="container newsletter-content">
-            <h2>Join the colorful Bunch</h2>
-            <div class="newsletter-form">
-                <input type="email" placeholder="write email">
-                <button class="btn subscribe-btn">Subscribe</button>
-            </div>
-        </div>
-    </section> -->
-    <section class="join-section">
-        <div class="container-join-section">
-            <h2>Join the colorful Bunch</h2>
-            <div class="join-section-form">
-                <input type="email" placeholder="write email">
-                <button class="btn subscribe-btn">Subscribe</button>
+    
+    <section class="get-in-touch-section">
+        <div class="get-in-touch-content">
+            <div class="left-side">
+                <h2 class="section-title">Join the colorful Bunch</h2>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="With email">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
             </div>
         </div>
     </section>
-
+    
     <footer class="footer">
         <div class="container footer-content-grid">
             <div class="footer-logo-info">
-                <div class="logo">
-                    <img src="assets/logo.png" alt="Flower Market Logo">
+                <div class="logo-wrapper">
+                    <img src="assets/logo.png" alt="Fauget Flower Shop Logo">
+                    <div class="logo-text">
+                    </div>
                 </div>
-                <p>Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+                <p class="footer-description">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
             </div>
             <div class="footer-links-group">
                 <h4>Home</h4>
@@ -185,13 +167,10 @@
                 </ul>
             </div>
             <div class="social-links">
-                <h4>Follow Us</h4>
-                <ul>
-                    <li><a href="assets/icon-linkedin.png"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="assets/icon-facebook.png"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="assets/icon-twitter.png"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="assets/icon-youtube.png"><i class="fab fa-youtube"></i></a></li>
-                </ul>
+                <img src="assets/icon-linkedin.png" alt="">
+                <img src="assets/icon-twitter.png" alt="">
+                <img src="assets/icon-facebook.png" alt="">
+                <img src="assets/icon-youtube.png" alt="">
             </div>
         </div>
     </footer>
